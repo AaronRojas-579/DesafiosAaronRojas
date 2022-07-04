@@ -26,19 +26,6 @@
     background-size: contain;
     background-position: center;
 }
-.Javascript{
-    background-image: url(../img/javascript.png);
-    @include cursos;
-}
-.HTML{
-    background-image: url(../img/html.png);
-    @include cursos;
-}
-.SCSS{
-    background-image: url(../img/scss.png);
-    @include cursos;
-}
-.ReactJS{
-    background-image: url(../img/react.png);
+.img_producto{
     @include cursos;
 }

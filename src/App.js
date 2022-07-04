@@ -13,7 +13,7 @@ const Clases = (props)=>{
   <>
     <hr/>
     <h2>{props.nombre}</h2>
-    <div className={props.nombre} ></div>
+    <div className="img_producto" style={{backgroundImage:`url(/img/${props.nombre}.png)`}} ></div>
     <div>Profesor : <spam>{props.profesor}</spam> </div>
     <div>Alumno : <spam>{props.alumno}</spam> </div>
     <div>Duración : <spam>{props.duracion} Semanas</spam> </div>

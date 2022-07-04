@@ -35,38 +35,7 @@
   color: black;
 }
 
-.Javascript {
-  background-image: url(../img/javascript.png);
-  width: 15rem;
-  height: 11rem;
-  margin: auto;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.HTML {
-  background-image: url(../img/html.png);
-  width: 15rem;
-  height: 11rem;
-  margin: auto;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.SCSS {
-  background-image: url(../img/scss.png);
-  width: 15rem;
-  height: 11rem;
-  margin: auto;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.ReactJS {
-  background-image: url(../img/react.png);
+.img_producto {
   width: 15rem;
   height: 11rem;
   margin: auto;
