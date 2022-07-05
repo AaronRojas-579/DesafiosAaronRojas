@@ -29,3 +29,33 @@
 .img_producto{
     @include cursos;
 }
+
+.container_carrito{
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    h4{
+        margin: 1rem 0;
+    }
+    .container_botones{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background-color: grey;
+        border: 1px black solid ;
+        color: antiquewhite;
+        button{
+            width: 2rem;
+            height: 2rem;
+            border: 0;
+            background-color: antiquewhite;
+            font-weight: 900;
+            color: grey;
+        }
+    }
+    .stock_text{
+        margin: .5rem;
+    }
+}

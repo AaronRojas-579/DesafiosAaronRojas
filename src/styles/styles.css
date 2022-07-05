@@ -43,4 +43,47 @@
   background-size: contain;
   background-position: center;
 }
+
+.container_carrito {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+.container_carrito h4 {
+  margin: 1rem 0;
+}
+
+.container_carrito .container_botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  background-color: grey;
+  border: 1px black solid;
+  color: antiquewhite;
+}
+
+.container_carrito .container_botones button {
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  background-color: antiquewhite;
+  font-weight: 900;
+  color: grey;
+}
+
+.container_carrito .stock_text {
+  margin: .5rem;
+}
 /*# sourceMappingURL=styles.css.map */

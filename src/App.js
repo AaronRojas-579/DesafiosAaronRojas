@@ -1,10 +1,11 @@
 import './App.css';
 import "./styles/styles.css"
 import NavBar  from './components/NavBar';
+import ItemCount from "./components/ItemCount";
 
 const Button = (props)=>{
   return (
-      <button type="button">{props.nombre}</button>
+      <button type="button">Ver mas sobre {props.nombre}</button>
   )
 }
 
@@ -18,6 +19,7 @@ const Clases = (props)=>{
     <div>Alumno : <spam>{props.alumno}</spam> </div>
     <div>Duración : <spam>{props.duracion} Semanas</spam> </div>
     <Button nombre = {props.nombre}></Button>
+    <ItemCount></ItemCount>
   </>
   )
 }
