@@ -12,10 +12,10 @@ const Button = (props)=>{
     <>
       <hr/>
       <h2>{props.nombre}</h2>
-      <div className="img_producto" style={{backgroundImage:`url(/img/${props.nombre}.png)`}} ></div>
-      <div>Profesor : <spam>{props.profesor}</spam> </div>
-      <div>Alumno : <spam>{props.alumno}</spam> </div>
-      <div>Duración : <spam>{props.duracion} Semanas</spam> </div>
+      <div className="img_producto" style={{backgroundImage:`url(${props.imagen})`}} ></div>
+      <div>Especie : <spam>{props.profesor}</spam> </div>
+      <div>Sexo : <spam>{props.alumno}</spam> </div>
+      <div>Lugar de Nacimiento : <spam>{props.duracion}</spam> </div>
       <Button nombre = {props.nombre}></Button>
       <ItemCount></ItemCount>
     </>
@@ -25,9 +25,7 @@ const Button = (props)=>{
 const Items = ({item}) => {
   return (
     <>
-        {
-            item.map(item=> <Clases key={item.nombre} nombre={item.nombre} profesor={item.profesor} alumno={item.alumno} duracion={item.duracion}></Clases>)
-        }
+      <Clases nombre={item.name} profesor={item.species} alumno={item.gender} imagen={item.image} duracion={item.location.name} ></Clases>
     </>
   )
 }

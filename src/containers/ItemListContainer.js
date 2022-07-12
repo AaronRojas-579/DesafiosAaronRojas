@@ -35,12 +35,14 @@ const promesa = new Promise ((res,rej)=>{
 })
 
 const ItemListContainer = () => {
-    const [data,setData] =useState([])
+    const [data,setData] =useState({})
     promesa.then((res)=>setData(res));
 
   return (
     <>
-        <Items item={data}></Items>
+        {
+            data.length > 0 ? <Items item={data}></Items>:<h2>Cargando....</h2>
+        }
     </>
   )
 }

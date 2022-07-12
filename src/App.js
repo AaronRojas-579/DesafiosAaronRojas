@@ -1,7 +1,7 @@
 import './App.css';
 import "./styles/styles.css"
 import NavBar  from './components/NavBar';
-import ItemListContainer from './containers/ItemListContainer';
+import ItemDetailContainer from './containers/ItemDetailContainer';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <NavBar>
       </NavBar>
       <h1>Pagina Web Aaron Rojas</h1>
-      <ItemListContainer/>
+      <ItemDetailContainer/>
 
     </div>
   );
