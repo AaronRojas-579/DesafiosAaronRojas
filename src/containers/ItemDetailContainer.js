@@ -71,7 +71,7 @@ const customFetch = (time,task)=>{
 }
 
 const ItemDetailContainer = () => {
-    const [data,setData] =useState({})
+    const [data,setData] =useState([])
     // promesa.then((res)=>setData(res));
     useEffect(()=>{
         customFetch(2000,datos[4])

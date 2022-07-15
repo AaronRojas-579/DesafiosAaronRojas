@@ -13,9 +13,9 @@ const Button = (props)=>{
       <hr/>
       <h2>{props.nombre}</h2>
       <div className="img_producto" style={{backgroundImage:`url(${props.imagen})`}} ></div>
-      <div>Especie : <spam>{props.profesor}</spam> </div>
-      <div>Sexo : <spam>{props.alumno}</spam> </div>
-      <div>Lugar de Nacimiento : <spam>{props.duracion}</spam> </div>
+      <div>Especie : {props.profesor}</div>
+      <div>Sexo : {props.alumno}</div>
+      <div>Lugar de Nacimiento : Tierra</div>
       <Button nombre = {props.nombre}></Button>
       <ItemCount></ItemCount>
     </>
@@ -25,7 +25,7 @@ const Button = (props)=>{
 const Items = ({item}) => {
   return (
     <>
-      <Clases nombre={item.name} profesor={item.species} alumno={item.gender} imagen={item.image} duracion={item.location.name} ></Clases>
+      <Clases nombre={item.name} profesor={item.species} alumno={item.gender} imagen={item.image}/>
     </>
   )
 }
